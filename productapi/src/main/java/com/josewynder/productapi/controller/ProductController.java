@@ -2,10 +2,7 @@ package com.josewynder.productapi.controller;
 
 import com.josewynder.productapi.ProductRepository;
 import com.josewynder.productapi.model.Product;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -26,5 +23,10 @@ public class ProductController {
         product.setId(id);
         productRepository.save(product);
         return product;
+    }
+
+    @GetMapping("/{id}")
+    public Product getById(@PathVariable(name = "id") String id) {
+        return productRepository.findById(id).orElse(null);
     }
 }
