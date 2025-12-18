@@ -4,10 +4,12 @@ import io.github.josewynder.springarchitecture.automaker.Engine;
 import io.github.josewynder.springarchitecture.automaker.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class AutomakerConfiguration {
 
+    @Primary
     @Bean(name = "aspiredEngine")
     public Engine aspiredEngine() {
         var engine = new Engine();
