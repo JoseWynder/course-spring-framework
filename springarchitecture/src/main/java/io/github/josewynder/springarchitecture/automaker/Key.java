@@ -2,7 +2,7 @@ package io.github.josewynder.springarchitecture.automaker;
 
 public class Key {
     private Automaker automaker;
-    private String model;
+    private String type;
 
     public Automaker getAutomaker() {
         return automaker;
@@ -12,11 +12,11 @@ public class Key {
         this.automaker = automaker;
     }
 
-    public String getModel() {
-        return model;
+    public String getType() {
+        return type;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setType(String type) {
+        this.type = type;
     }
 }
