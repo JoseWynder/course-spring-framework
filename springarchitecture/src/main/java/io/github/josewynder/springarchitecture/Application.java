@@ -17,6 +17,8 @@ public class Application {
 				new SpringApplicationBuilder(Application.class);
 
 		builder.profiles("production", "approval");
+		builder.lazyInitialization(true);
+
 		builder.run(args);
 
 		// Application context already started.
