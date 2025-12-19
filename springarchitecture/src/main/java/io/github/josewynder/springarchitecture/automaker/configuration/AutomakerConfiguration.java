@@ -5,12 +5,14 @@ import io.github.josewynder.springarchitecture.automaker.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AutomakerConfiguration {
 
     @Primary
     @Bean(name = "aspiredEngine")
+    @Scope("singleton")
     public Engine aspiredEngine() {
         var engine = new Engine();
         engine.setHorsePower(120);
