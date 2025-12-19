@@ -14,4 +14,12 @@ public class TodoService {
     public TodoEntity save(TodoEntity newTodo) {
         return todoRepository.save(newTodo);
     }
+
+    public void updateStatus(TodoEntity todo) {
+        todoRepository.save(todo);
+    }
+
+    public TodoEntity findById(Integer id) {
+        return todoRepository.findById(id).orElse(null);
+    }
 }
