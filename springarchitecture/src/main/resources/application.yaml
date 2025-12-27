@@ -5,3 +5,7 @@ spring:
     show_sql: true
   main:
     lazy-initialization: false
+
+app:
+  config:
+    variable: x
