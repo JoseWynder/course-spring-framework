@@ -11,3 +11,4 @@ app:
     standard-engine: 130
   config:
     variable: value of variable x
+    value1: 500
