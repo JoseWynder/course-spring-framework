@@ -7,5 +7,7 @@ spring:
     lazy-initialization: false
 
 app:
+  automaker:
+    standard-engine: 130
   config:
-    variable: x
+    variable: value of variable x
