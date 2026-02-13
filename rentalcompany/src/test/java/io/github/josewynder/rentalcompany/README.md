@@ -1,4 +1,4 @@
-<h1 align="center">🧪 Spring Boot Testing Module</h1>
+<h1 align="center">Spring Boot Testing Module</h1>
 
 <p align="center">
 Projeto dedicado exclusivamente ao estudo e aplicação de testes automatizados
@@ -38,7 +38,6 @@ Também foram realizados testes envolvendo:
 
 - JUnit 5
 - Mockito
-- MockMvc
 - Spring Boot Test
 
 ---
@@ -66,3 +65,7 @@ Também foram realizados testes envolvendo:
 
 Este projeto é complementar ao projeto principal de API REST,
 sendo dedicado exclusivamente ao estudo de testes automatizados.
+
+---
+
+<p align="center"> <em>🔍 Exercícios práticos para fortalecer a base de testes e entender o comportamento real das camadas da aplicação.</em> </p>
